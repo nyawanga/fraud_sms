@@ -1,0 +1,44 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<form class="ui form">
+  <div class="field">
+    <label>Enter SMS Text</label>
+    <input type="text" name="last-name" placeholder="sms text to check">
+  </div>
+</form>
+<div class="ui checked checkbox">
+  <input type="checkbox" checked="">
+  <label> Help improve the predictions (authorize saving your text) </label>
+</div>
+<br></br>
+<div>
+  <button class="ui button primary" type="submit">Submit</button>
+</div>
+<table class="ui celled table">
+  <thead>
+    <tr><th>prediction</th>
+    <th>probability</th>
+    <th>text</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td data-label="prediction">0</td>
+      <td data-label="probability">0.0028</td>
+      <td data-label="text">test1</td>
+    </tr>
+    <tr>
+      <td data-label="prediction">1</td>
+      <td data-label="probability">0.7528</td>
+      <td data-label="text">text2</td>
+    </tr>
+    <tr>
+      <td data-label="prediction">1</td>
+      <td data-label="probability">0.9887</td>
+      <td data-label="text">text3</td>
+    </tr>
+  </tbody>
+</table>
+{% endblock %}
