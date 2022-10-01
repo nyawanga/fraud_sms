@@ -3,7 +3,7 @@ fastapi
 uvicorn
 sqlalchemy
 jinja2
-numpy==1.16.5
+numpy==1.22.0
 pandas==0.25.2
 scikit-learn==0.21.3
 joblib==1.2.0
